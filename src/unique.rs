@@ -1,16 +1,13 @@
-use std::io::{self, Read};
+mod utils;
+
+use std::io::{self};
 use std::collections::HashSet;
 
 fn main() -> io::Result<()> {
     let mut unique = HashSet::new();
-    let mut buffer = String::new();
+    let input = utils::process_stdin();
 
-    let stdin = io::stdin();
-    let mut handle = stdin.lock();
-
-    handle.read_to_string(&mut buffer)?;
-
-    for l in buffer.lines() {
+    for l in input.lines() {
         unique.insert(l);
     }
 
