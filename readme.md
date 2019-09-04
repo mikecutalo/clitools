@@ -22,8 +22,32 @@ cat
 meow
 ```
 
+### cslice
+Takes stdin and output the column specified, index starting at 0.
+```
+➜ cslice --help
+slicecol 1.0
+Mike C. <mcutalo88@gmail.com>
+
+USAGE:
+    cslice <column> [skip]
+
+FLAGS:
+    -h, --help       Prints help information
+    -V, --version    Prints version information
+
+ARGS:
+    <column>    Column to extract
+    <skip>      Rows to skip
+```
+
+```
+echo "meow cat woof" | slicecol 1
+cat
+```
+
+
 ### Other tools to build
 1. sort
 1. filetype
 1. watch
-1. sed / awk column print
