@@ -23,7 +23,7 @@ meow
 ```
 
 ### cslice
-Takes stdin and output the column specified, index starting at 0.
+Takes stdin and outputs the column specified.
 ```
 ➜ cslice --help
 slicecol 1.0
