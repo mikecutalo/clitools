@@ -26,7 +26,7 @@ meow
 Takes stdin and outputs the column specified.
 ```
 ➜ cslice --help
-slicecol 1.0
+cslice 1.0
 Mike C. <mcutalo88@gmail.com>
 
 USAGE:
@@ -42,7 +42,7 @@ ARGS:
 ```
 
 ```
-echo "meow cat woof" | slicecol 1
+echo "meow cat woof" | cslice 1
 cat
 ```
 
