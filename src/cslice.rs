@@ -26,7 +26,9 @@ fn main() -> io::Result<()> {
     handle.read_to_string(&mut buffer)?;
 
     for l in buffer.lines().skip(skip_arg.parse::<usize>().unwrap()) {
-        println!("{}", l.split_whitespace().nth(col_arg.parse::<usize>().unwrap()).unwrap());
+        if !l.is_empty() {
+            println!("{}", l.split_whitespace().nth(col_arg.parse::<usize>().unwrap()).unwrap());
+        }
     }
 
     Ok(())

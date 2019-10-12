@@ -51,3 +51,4 @@ cat
 1. sort
 1. filetype
 1. watch
+1. countlines
