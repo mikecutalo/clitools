@@ -6,7 +6,6 @@ use std::io::{self, Read};
 fn main() -> io::Result<()> {
     let cslice = App::new("cslice")
                     .version("1.0")
-                    .author("Mike C. <mcutalo88@gmail.com>")
                     .arg(Arg::with_name("column")
                         .help("Column to slice")
                         .required(true)
