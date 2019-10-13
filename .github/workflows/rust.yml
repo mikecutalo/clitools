@@ -1,5 +1,5 @@
-name: rust
-on: [push, pull_request]
+name: clitools
+on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
