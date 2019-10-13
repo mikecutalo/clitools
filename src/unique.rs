@@ -11,7 +11,9 @@ fn main() -> io::Result<()> {
     handle.read_to_string(&mut buffer)?;
 
     for l in buffer.lines() {
-        unique.insert(l);
+        if !l.is_empty() {
+            unique.insert(l);
+        }
     }
 
     for item in unique {
