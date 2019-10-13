@@ -1,4 +1,5 @@
 # clitools
+![](https://github.com/mcutalo88/clitools/workflows/clitools/badge.svg)
 
 ## My personal collection of cli tools
 
