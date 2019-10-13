@@ -3,11 +3,16 @@
 ## My personal collection of cli tools
 
 This project is mostly for me to learn rust, while also yeilding
-some useful tools that I could use.
+some useful tools.
+
+### Installation
+Clone this repo and use cargo to install. It is assumed that you already have the rust toolchain installed.
+```
+cargo install --path . --force
+```
 
 ### frequency
-Takes stdin and count's the frequency of matching lines, the output is sorted from
-greatest to least.
+Takes stdin and count's the frequency of matching lines, the output is sorted in descending order.
 ```
 > echo "meow\nmeow\ncat" | frequency
 2 meow
@@ -25,19 +30,21 @@ meow
 ### cslice
 Takes stdin and outputs the column specified.
 ```
-➜ cslice --help
+➜ cslice -h
 cslice 1.0
-Mike C. <mcutalo88@gmail.com>
 
 USAGE:
-    cslice <column> [skip]
+    cslice [OPTIONS] <column> [skip]
 
 FLAGS:
     -h, --help       Prints help information
     -V, --version    Prints version information
 
+OPTIONS:
+    -l, --limit <limit>    Limit output [default: ]
+
 ARGS:
-    <column>    Column to extract
+    <column>    Column to slice
     <skip>      Rows to skip
 ```
 
