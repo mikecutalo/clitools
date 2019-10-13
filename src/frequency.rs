@@ -11,7 +11,9 @@ fn main() -> io::Result<()> {
     handle.read_to_string(&mut buffer)?;
 
     for l in buffer.lines() {
-        *frequency.entry(l).or_insert(0) += 1;
+        if !l.is_empty() {
+            *frequency.entry(l).or_insert(0) += 1;
+        }
     }
 
     // Convert to vec so we can sort
