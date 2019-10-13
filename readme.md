@@ -53,10 +53,3 @@ ARGS:
 echo "meow cat woof" | cslice 1
 cat
 ```
-
-
-### Other tools to build
-1. sort
-1. filetype
-1. watch
-1. countlines
