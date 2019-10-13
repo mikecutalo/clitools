@@ -27,7 +27,7 @@ fn test_column_parsing_plus_skip() {
 }
 
 #[test]
-fn test_emptylines_input() {
+fn test_empty_lines() {
     let mut cmd = Command::cargo_bin("cslice").unwrap();
     cmd.arg("0");
     cmd
