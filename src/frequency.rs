@@ -1,5 +1,5 @@
-use std::io::{self, Read};
 use std::collections::HashMap;
+use std::io::{self, Read};
 
 fn main() -> io::Result<()> {
     let mut frequency = HashMap::new();

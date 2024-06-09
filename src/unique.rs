@@ -1,5 +1,5 @@
-use std::io::{self, Read};
 use std::collections::HashSet;
+use std::io::{self, Read};
 
 fn main() -> io::Result<()> {
     let mut unique = HashSet::new();
